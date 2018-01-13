@@ -40,7 +40,7 @@ void loop() {
     if (Serial.peek() == 'c'){
       Serial.read();
       state = Serial.parseInt();
-      digitalWrite(LED_BUILTIN,state);
+      digitalWrite(LED_BUILTIN, state);
     }
     while (Serial.available() > 0){
       Serial.read();
